@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <id>SV001</id>
+        <name>Huỳnh Minh Nhựt</name>
+        <subjects>
+            <subject>
+                <subject_name>Toán</subject_name>
+                <score>8.5</score>
+            </subject>
+            <subject>
+                <subject_name>Vật Lý</subject_name>
+                <score>7.0</score>
+            </subject>
+        </subjects>
+    </student>
+    <student>
+        <id>SV002</id>
+        <name>Nguyễn Quỳnh Như</name>
+        <subjects>
+            <subject>
+                <subject_name>Hóa Học</subject_name>
+                <score>9.0</score>
+            </subject>
+            <subject>
+                <subject_name>Ngữ Văn</subject_name>
+                <score>8.0</score>
+            </subject>
+        </subjects>
+    </student>
+</students>
