@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE orders SYSTEM "orders.dtd"> -->
+<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="orders.xsd">
+    <order id="O001">
+        <product id="P001">
+            <name>Máy tính xách tay</name>
+            <quantity>2</quantity>
+        </product>
+        <product id="P002">
+            <name>Điện thoại thông minh</name>
+            <quantity>1</quantity>
+        </product>
+    </order>
+    <order id="O002">
+        <product id="P003">
+            <name>Máy tính bảng</name>
+            <quantity>3</quantity>
+        </product>
+        <product id="P002">
+            <name>Điện thoại thông minh</name>
+            <quantity>2</quantity>
+        </product>
+    </order>
+</orders>

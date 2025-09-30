@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE library SYSTEM "library.dtd"> -->
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="library.xsd">
+    <book id="B001">
+        <title>Đắc Nhân Tâm</title>
+        <author>Dale Carnegie</author>
+        <year>1936</year>
+        <genre>Kỹ năng sống</genre>
+    </book>
+    <book id="B002">
+        <title>Harry Potter và Hòn Đá Phù Thủy</title>
+        <author>J.K. Rowling</author>
+        <year>1997</year>
+        <genre>Giả tưởng</genre>
+    </book>
+    <book id="B003">
+        <title>Tuổi Trẻ Đáng Giá Bao Nhiêu?</title>
+        <author>Rosie Nguyễn</author>
+        <year>2016</year>
+        <genre>Truyền cảm hứng</genre>
+    </book>
+</library>
