@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="MaType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Za-z0-9\-]+"/>
+      <xs:maxLength value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TenType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([ a-zA-Z\-])*"/>
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="dssv" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ds_khoa">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="khoa" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ma" type="MaType"/>
+                    <xs:element name="ten" type="TenType">
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ds_lop">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="lop" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ma" type="MaType"/>
+                    <xs:element name="ten" type="TenType"/>
+                    <xs:element name="khoaRef" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ds_sv">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sv" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="mssv" type="xs:string"/>
+                    <xs:element name="hoten" type="xs:string"/>
+                    <xs:element name="email" type="xs:string"/>
+                    <xs:element name="diaChi" type="xs:string"/>
+                    <xs:element name="sdt">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                            <xs:pattern value="0\d{9}"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                        </xs:element>
+                    <xs:element name="lopRef" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+
+    <!-- Key for khoa: ma -->
+    <xs:key name="KhoaKey">
+      <xs:selector xpath="ds_khoa/khoa"/>
+      <xs:field xpath="ma"/>
+    </xs:key>
+
+    <!-- Key for lop: ma -->
+    <xs:key name="LopKey">
+      <xs:selector xpath="ds_lop/lop"/>
+      <xs:field xpath="ma"/>
+    </xs:key>
+
+    <!-- Keyref: lop.khoaRef refers to khoa.ma -->
+    <xs:keyref name="LopToKhoaRef" refer="KhoaKey">
+      <xs:selector xpath="ds_lop/lop"/>
+      <xs:field xpath="khoaRef"/>
+    </xs:keyref>
+
+    <!-- Keyref: sv.lopRef refers to lop.ma -->
+    <xs:keyref name="SvToLopRef" refer="LopKey">
+      <xs:selector xpath="ds_sv/sv"/>
+      <xs:field xpath="lopRef"/>
+    </xs:keyref>
+
+  </xs:element>
+</xs:schema>

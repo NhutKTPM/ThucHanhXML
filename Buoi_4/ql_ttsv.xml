@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dssv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ql_ttsv.xsd">
+    <ds_khoa>
+        <khoa>
+            <ma>K001</ma>
+            <ten>Cong nghe thong tin</ten>
+        </khoa>
+        <khoa>
+            <ma>K002</ma>
+            <ten>Dien - dien tu</ten>
+        </khoa>
+        <khoa>
+            <ma>K003</ma>
+            <ten>Ky thuat co khi</ten>
+        </khoa>
+    </ds_khoa>
+
+    <ds_lop>
+        <lop>
+            <ma>L001</ma>
+            <ten>Ky thuat phan mem</ten>
+            <khoaRef>K001</khoaRef>
+        </lop>
+        <lop>
+            <ma>L002</ma>
+            <ten>Cong nghe thong tin</ten>
+            <khoaRef>K001</khoaRef>
+        </lop>
+        <lop>
+            <ma>L003</ma>
+            <ten>Dien tu vien thong</ten>
+            <khoaRef>K002</khoaRef>
+        </lop>
+        <lop>
+            <ma>L004</ma>
+            <ten>Co khi che tao</ten>
+            <khoaRef>K003</khoaRef>
+        </lop>
+    </ds_lop>
+
+    <ds_sv>
+        <sv>
+            <mssv>SV001</mssv>
+            <hoten>Nguyễn Văn A</hoten>
+            <email>nguyenvana@gmail.com</email>
+            <diaChi>123 Nguyễn Văn Cừ, Ninh Kiều, Cần Thơ</diaChi>
+            <sdt>0912345678</sdt>
+            <lopRef>L001</lopRef>
+        </sv>
+        <sv>
+            <mssv>SV002</mssv>
+            <hoten>Trần Thị B</hoten>
+            <email>tranthib@gmail.com</email>
+            <diaChi>456 Trần Hưng Đạo, Ninh Kiều, Cần Thơ</diaChi>
+            <sdt>0987654321</sdt>
+            <lopRef>L001</lopRef>
+        </sv>
+        <sv>
+            <mssv>SV003</mssv>
+            <hoten>Phạm Văn C</hoten>
+            <email>phamvanc@gmail.com</email>
+            <diaChi>789 Lê Lợi, Ninh Kiều, Cần Thơ</diaChi>
+            <sdt>0911223344</sdt>
+            <lopRef>L002</lopRef>
+        </sv>
+        <sv>
+            <mssv>SV004</mssv>
+            <hoten>Đỗ Thị D</hoten>
+            <email>dothid@gmail.com</email>
+            <diaChi>321 Trần Phú, Ninh Kiều, Cần Thơ</diaChi>
+            <sdt>0988776655</sdt>
+            <lopRef>L003</lopRef>
+        </sv>
+    </ds_sv>
+ </dssv>

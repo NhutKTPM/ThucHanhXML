@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QUANAN xmlns="http://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.w3schools.com ql_quanan.xsd">
+    <DS_MON>
+        <MON>
+            <MA_MON>MA001</MA_MON>
+            <TEN_MON>Com tam</TEN_MON>
+            <GIA>30000</GIA>
+            <HINHANH>comtam.jpg</HINHANH>
+        </MON>
+        <MON>
+            <MA_MON>MA002</MA_MON>
+            <TEN_MON>Bun bo Hue</TEN_MON>
+            <GIA>40000</GIA>
+            <HINHANH>bunbohue.jpg</HINHANH>
+        </MON>
+        <MON>
+            <MA_MON>MA003</MA_MON>
+            <TEN_MON>Banh mi</TEN_MON>
+            <GIA>20000</GIA>
+            <HINHANH>banhmi.jpg</HINHANH>
+        </MON>
+        <MON>
+            <MA_MON>MA004</MA_MON>
+            <TEN_MON>Phở</TEN_MON>
+            <GIA>35000</GIA>
+            <HINHANH>pho.jpg</HINHANH>
+        </MON>
+        <MON>
+            <MA_MON>MA005</MA_MON>
+            <TEN_MON>Banh xeo</TEN_MON>
+            <GIA>45000</GIA>
+            <HINHANH>banhxeo.jpg</HINHANH>
+        </MON>
+    </DS_MON>
+
+    <DS_BAN>
+        <BAN>
+            <SO_BAN>B001</SO_BAN>
+            <TEN_BAN>Ban 1</TEN_BAN>
+        </BAN>
+        <BAN>
+            <SO_BAN>B002</SO_BAN>
+            <TEN_BAN>Ban 2</TEN_BAN>
+        </BAN>
+        <BAN>
+            <SO_BAN>B003</SO_BAN>
+            <TEN_BAN>Ban 3</TEN_BAN>
+        </BAN>
+        <BAN>
+            <SO_BAN>B004</SO_BAN>
+            <TEN_BAN>Ban 4</TEN_BAN>
+        </BAN>
+        <BAN>
+            <SO_BAN>B005</SO_BAN>
+            <TEN_BAN>Ban 5</TEN_BAN>
+        </BAN>
+    </DS_BAN>
+
+    <DS_NHANVIEN>
+        <NHANVIEN>
+            <MANV>NV001</MANV>
+            <TENNV>Nguyen Van A</TENNV>
+            <SDT>0912345678</SDT>
+            <DIACHI>123 Nguyen Van Cu, Ninh Kieu, Can Tho</DIACHI>
+            <GIOITINH>Nam</GIOITINH>
+            <USERNAME>nguyenvana</USERNAME>
+            <PASSWORD>123456</PASSWORD>
+        </NHANVIEN>
+        <NHANVIEN>
+            <MANV>NV002</MANV>
+            <TENNV>Tran Thi B</TENNV>
+            <SDT>0987654321</SDT>
+            <DIACHI>456 Tran Hung Dao, Ninh Kieu, Can Tho</DIACHI>
+            <GIOITINH>Nu</GIOITINH>
+            <USERNAME>tranthib</USERNAME>
+            <PASSWORD>123456</PASSWORD>
+        </NHANVIEN>
+        <NHANVIEN>
+            <MANV>NV003</MANV>
+            <TENNV>Le Van C</TENNV>
+            <SDT>0123456789</SDT>
+            <DIACHI>789 Le Loi, Ninh Kieu, Can Tho</DIACHI>
+            <GIOITINH>Nam</GIOITINH>
+            <USERNAME>levanc</USERNAME>
+            <PASSWORD>123456</PASSWORD>
+        </NHANVIEN>
+        <NHANVIEN>
+            <MANV>NV004</MANV>
+            <TENNV>Pham Thi D</TENNV>
+            <SDT>0981234567</SDT>
+            <DIACHI>321 Nguyen Trai, Ninh Kieu, Can Tho</DIACHI>
+            <GIOITINH>Nu</GIOITINH>
+            <USERNAME>phamthid</USERNAME>
+            <PASSWORD>123456</PASSWORD>
+        </NHANVIEN>
+        <NHANVIEN>
+            <MANV>NV005</MANV>
+            <TENNV>Hoang Van E</TENNV>
+            <SDT>0911223344</SDT>
+            <DIACHI>654 Le Lai, Ninh Kieu, Can Tho</DIACHI>
+            <GIOITINH>Nam</GIOITINH>
+            <USERNAME>hoangvane</USERNAME>
+            <PASSWORD>123456</PASSWORD>
+        </NHANVIEN>
+    </DS_NHANVIEN>
+
+    <DS_HOADON>
+        <HOADON>
+            <SOHD>HD001</SOHD>
+            <NGAYLAP>2024-06-01</NGAYLAP>
+            <TONGTIEN>100000</TONGTIEN>
+            <MANV_REF>NV001</MANV_REF>
+            <SO_BAN_REF>B001</SO_BAN_REF>
+            <DS_CTHD>
+                <CTHD>
+                    <MA_MON_REF>MA001</MA_MON_REF>
+                    <SOLUONG>2</SOLUONG>
+                </CTHD>
+                <CTHD>
+                    <MA_MON_REF>MA003</MA_MON_REF>
+                    <SOLUONG>1</SOLUONG>
+                </CTHD>
+            </DS_CTHD>
+        </HOADON>
+        <HOADON>
+            <SOHD>HD002</SOHD>
+            <NGAYLAP>2024-06-02</NGAYLAP>
+            <TONGTIEN>75000</TONGTIEN>
+            <MANV_REF>NV002</MANV_REF>
+            <SO_BAN_REF>B002</SO_BAN_REF>
+            <DS_CTHD>
+                <CTHD>
+                    <MA_MON_REF>MA002</MA_MON_REF>
+                    <SOLUONG>1</SOLUONG>
+                </CTHD>
+                <CTHD>
+                    <MA_MON_REF>MA004</MA_MON_REF>
+                    <SOLUONG>1</SOLUONG>
+                </CTHD>
+            </DS_CTHD>
+        </HOADON>
+        <HOADON>
+            <SOHD>HD003</SOHD>
+            <NGAYLAP>2024-06-03</NGAYLAP>
+            <TONGTIEN>90000</TONGTIEN>
+            <MANV_REF>NV003</MANV_REF>
+            <SO_BAN_REF>B003</SO_BAN_REF>
+            <DS_CTHD>
+                <CTHD>
+                    <MA_MON_REF>MA005</MA_MON_REF>
+                    <SOLUONG>2</SOLUONG>
+                </CTHD>
+                <CTHD>
+                    <MA_MON_REF>MA001</MA_MON_REF>
+                    <SOLUONG>1</SOLUONG>
+                </CTHD>
+            </DS_CTHD>
+        </HOADON>
+        <HOADON>
+            <SOHD>HD004</SOHD>
+            <NGAYLAP>2024-06-04</NGAYLAP>
+            <TONGTIEN>60000</TONGTIEN>
+            <MANV_REF>NV004</MANV_REF>
+            <SO_BAN_REF>B004</SO_BAN_REF>
+            <DS_CTHD>
+                <CTHD>
+                    <MA_MON_REF>MA003</MA_MON_REF>
+                    <SOLUONG>3</SOLUONG>
+                </CTHD>
+            </DS_CTHD>
+        </HOADON>
+        <HOADON>
+            <SOHD>HD005</SOHD>
+            <NGAYLAP>2024-06-05</NGAYLAP>
+            <TONGTIEN>120000</TONGTIEN>
+            <MANV_REF>NV005</MANV_REF>
+            <SO_BAN_REF>B005</SO_BAN_REF>
+            <DS_CTHD>
+                <CTHD>
+                    <MA_MON_REF>MA002</MA_MON_REF>
+                    <SOLUONG>2</SOLUONG>
+                </CTHD>
+                <CTHD>
+                    <MA_MON_REF>MA004</MA_MON_REF>
+                    <SOLUONG>1</SOLUONG>
+                </CTHD>
+                <CTHD>
+                    <MA_MON_REF>MA005</MA_MON_REF>
+                    <SOLUONG>1</SOLUONG>
+                </CTHD>
+            </DS_CTHD>
+        </HOADON>
+    </DS_HOADON>
+ </QUANAN>
