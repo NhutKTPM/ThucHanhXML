@@ -1,0 +1,9 @@
+{
+    "$schema": "sach_schema.json",
+  "tieuDe": "Dế Mèn Phiêu Lưu Ký",
+  "tacGia": "Tô Hoài",
+  "namXuatBan": 1941,
+  "theLoai": ["Thiếu nhi", "Phiêu lưu"],
+  "soTrang": 192,
+  "danhGia": 4.8
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "./weather_schema.json",
+  "city": "Hà Nội",
+  "country": "Việt Nam",
+  "temperature": 30.5,
+  "humidity": 70,
+  "wind_speed": 5.2,
+  "description": "Nhiều mây"
+}

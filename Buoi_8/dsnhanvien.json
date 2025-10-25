@@ -1,0 +1,26 @@
+{
+  "$schema": "./dsnhanvien_schema.json",
+  "employees": [
+    {
+      "id": "NV001",
+      "name": "Nguyễn Văn A",
+      "position": "Kế toán",
+      "salary": 12000000,
+      "status": "đang làm"
+    },
+    {
+      "id": "NV002",
+      "name": "Trần Thị B",
+      "position": "Nhân sự",
+      "salary": 10000000,
+      "status": "nghỉ việc"
+    },
+    {
+      "id": "NV003",
+      "name": "Lê Văn C",
+      "position": "Quản lý",
+      "salary": 15000000,
+      "status": "đang làm"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+    "$schema": "sanpham_schema.json",
+    "sanPham":
+        [                   
+        {
+            "tenSanPham": "Laptop Dell Inspiron",
+            "giaTien": 15000000,
+            "soLuongTonKho": 10,
+            "danhMucSanPham": "Máy tính xách tay"
+        },
+        {
+            "tenSanPham": "Chuột Logitech M185",
+            "giaTien": 250000,
+            "soLuongTonKho": 50,
+            "danhMucSanPham": "Phụ kiện máy tính"
+        },
+        {
+            "tenSanPham": "Điện thoại Samsung Galaxy S23",
+            "giaTien": 21000000,
+            "soLuongTonKho": 5,
+            "danhMucSanPham": "Điện thoại di động"
+        }
+        ]
+}

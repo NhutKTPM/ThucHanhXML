@@ -1,0 +1,11 @@
+{
+  "$schema": "sinhvien_schema.json",
+  "hoTen": "Nguyen Van A",
+  "tuoi": 20,
+  "gioiTinh": "Nam",
+  "diemTrungBinh": 8.5,
+  "diaChi": {
+    "thanhPho": "Ha Noi",
+    "quocGia": "Viet Nam"
+  }
+}

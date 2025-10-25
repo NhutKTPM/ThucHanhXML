@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "hoTen": { "type": "string" },
+    "tuoi": { "type": "integer", "minimum": 0 },
+    "gioiTinh": { "type": "string", "enum": ["Nam", "Nữ", "Khác"] },
+    "diemTrungBinh": { "type": "number", "minimum": 0, "maximum": 10 },
+    "diaChi": {
+      "type": "object",
+      "properties": {
+        "thanhPho": { "type": "string" },
+        "quocGia": { "type": "string" }
+      },
+      "required": ["thanhPho", "quocGia"]
+    }
+  },
+  "required": ["hoTen", "tuoi", "gioiTinh", "diemTrungBinh", "diaChi"]
+}
