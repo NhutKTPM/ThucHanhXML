@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["id", "name", "age", "email", "address", "courses", "createdAt", "role"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^U[0-9]{5}$",
+      "description": "ID học sinh bắt đầu bằng 'U' và theo sau là 5 chữ số"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 50,
+      "description": "Tên học sinh từ 3-50 ký tự"
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 18,
+      "description": "Tuổi từ 10 đến 18"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email đúng định dạng"
+    },
+    "isActive": {
+      "type": "boolean",
+      "description": "Trạng thái hoạt động (không bắt buộc)"
+    },
+    "address": {
+      "type": "object",
+      "required": ["city", "district", "street"],
+      "properties": {
+        "city": {
+          "type": "string",
+          "description": "Thành phố"
+        },
+        "district": {
+          "type": "string",
+          "description": "Quận/huyện"
+        },
+        "street": {
+          "type": "string",
+          "description": "Địa chỉ đường"
+        },
+        "postalCode": {
+          "type": "string",
+          "pattern": "^[0-9]{6}$",
+          "description": "Mã bưu điện 6 chữ số"
+        }
+      },
+      "additionalProperties": false
+    },
+    "courses": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Danh sách môn học, ít nhất 1 môn",
+      "items": {
+        "type": "object",
+        "required": ["name", "score", "teacher"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Tên môn học, không được rỗng"
+          },
+          "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 10,
+            "description": "Điểm số từ 0 đến 10"
+          },
+          "teacher": {
+            "type": "object",
+            "required": ["name", "email"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Tên giáo viên"
+              },
+              "email": {
+                "type": "string",
+                "format": "email",
+                "description": "Email giáo viên"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Thời gian tạo theo định dạng ISO 8601"
+    },
+    "role": {
+      "type": "string",
+      "enum": ["student", "teacher", "admin"],
+      "description": "Vai trò: student, teacher hoặc admin"
+    }
+  }
+}

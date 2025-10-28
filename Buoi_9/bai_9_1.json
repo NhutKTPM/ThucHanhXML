@@ -1,0 +1,9 @@
+{
+    "$schema":"bai_9_1_schema.json",
+  "title": "Học Python cơ bản",
+  "author": "Nguyễn Minh",
+  "price": 120000,
+  "inStock": true,
+  "categories": ["Lập trình", "Python", "Cơ bản"],
+  "rating": 4.5
+}
